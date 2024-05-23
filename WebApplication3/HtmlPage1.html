@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet1.css"  />
+    <script>
+        function check() {
+            var n = document.getElementById("s1"); // כל הטקסטבוקס
+            var b = document.getElementById("s2");
+            var e = document.getElementById("s3");
+            var g = document.getElementById("s4");
+            var i = document.getElementById("s5");
+            var k = document.getElementById("s6");
+            var w = Number(n.value) + Number(b.value) + Number(e.value) + Number(g.value) + Number(i.value) + Number(k.value)
+            if (n.value < 1 || b.value<1||e.value<1||g.value<1||i.value<1||k.value<1) {
+                alert("לא הוכנסו מספרים תקינים");
+            }
+
+            else if (w>1000) {
+                alert("עברת את סכום הנקודות האפשרי ");
+            }
+            
+            else {
+                var d = document.getElementById("1");
+                d.style.width = n.value/w*100 + "%";
+
+                var a = document.getElementById("2");
+                a.style.width = b.value/w*100 + "%";
+
+                var c = document.getElementById("3");
+                c.style.width = e.value/w*100 + "%";
+
+                var f = document.getElementById("4");
+                f.style.width = g.value/w*100 + "%";
+
+                var h = document.getElementById("5");
+                h.style.width = i.value/w*100 + "%";
+
+                var j = document.getElementById("6");
+                j.style.width = k.value/w*100 + "%";
+            }
+            
+        }
+
+    </script>
+
+    <style>
+
+        img{
+            opacity: 0.5;
+        }
+        img:hover {
+            opacity: 1;}
+       td{
+           width:30%;
+       }
+        
+       tr {
+            width: 30%;
+        }
+        
+       input{
+            width:70%
+        }
+    </style>
+</head>
+<body style="width:100%">
+    <div style="width:100% ">
+        <div style="float:left; width:33.33333333% ;background-color:blueviolet">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA31gOBkW_fFT3rZBot4Pgg8Y5LOnvIpEGSA&usqp=CAU" alt="mic" style="width: 100%; height: 100%; opacity:1 " >
+        </div>
+        
+        <div style=" width: 33.33333333%; float: left; background-color:chartreuse;">
+            <center>
+                <h3 style="margin: 2px;" >הזמרות הטובות בעולם</h3> 
+                <hr />
+            <h6 style="margin: 2px; font-size-adjust:unset">הזמרות המופיעות בטבלה הן הזמרות שהושמעו הכי הרבה בעשור האחרון,כאן נמלא את מספר הנקודות שקיבלו בהצבעה האחרונה על ידי קהל המאזינים</h6>
+            </center>
+        </div>
+
+        <div style="float: left; width: 33.33333333%; background-color: brown">
+            <img src="https://www.2play.co.il/wp-content/uploads/2021/10/mask-music.png" alt="mic2" height="100" style="width:100%;height:100% ;opacity:1">
+        </div>
+    </div>
+
+
+    <table align="center" style="width: 33.33333% ;border:dotted"  >
+        <tr>
+            <th> נקודות</th>
+            <th>ארץ לידה</th>
+            <th colspan="2"> זמר</th>
+        </tr>
+
+        <tr style="background-color:blueviolet">
+            <td align="center"> <input id="s1" type="number"/></td>
+            <td align="center">ברבדוס </td>
+            <td > 
+                <a href="https://he.wikipedia.org/wiki/%D7%A8%D7%99%D7%94%D7%90%D7%A0%D7%94">
+                    <img src="https://ynet-pic1.yit.co.il/picserver5/crop_images/2018/10/19/8831548/8831548_0_25_980_552_0_x-large.jpg" alt="rihanna" style=" width: 100%" />
+                </a>
+            </td>
+            <td align="center"> rihanna</td>
+        </tr>
+
+
+        <tr style="background-color:aqua">
+            <td align="center"><input id="s2" type="number"/> </td>
+            <td align="center"> קולומביה</td>
+            <td>
+                <a href="https://he.wikipedia.org/wiki/%D7%A9%D7%90%D7%A7%D7%99%D7%A8%D7%94">
+                    <img src="https://img.mako.co.il/2022/07/30/shakira_autoOrient_i.jpg" alt="shakira" style="width: 100%" >
+                </a>
+                    </td>
+            <td align="center"> shakira </td>
+        </tr>
+
+        <tr style="background-color:coral">
+            <td align="center"><input id="s3" type="number"/> </td>
+            <td align="center">טקסס </td>
+            <td>
+                <a href="https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%95%D7%A0%D7%A1%D7%94">
+                    <img src="https://ca-times.brightspotcdn.com/dims4/default/31a9548/2147483647/strip/true/crop/5472x3648+0+0/resize/1200x800!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Faf%2F19%2F2f44eac24120be6326d6c4c1210e%2Fla-photos-1staff-732489-ca-0314-grammys-rcg-0186b.JPG" alt="beyonce" style="width: 100%" />
+                </a>
+            </td>
+            <td align="center"> beyonce </td>
+        </tr>
+
+        <tr style="background-color:greenyellow">
+            <td align="center"><input id="s4" type="number" /> </td>
+            <td align="center"> טנסי</td>
+            <td>
+                <a href="https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%99%D7%9C%D7%99_%D7%A1%D7%99%D7%99%D7%A8%D7%95%D7%A1">
+                    <img src="https://s.abcnews.com/images/GMA/miley-cyrus-versace-gty-mz-13-230310_1678460769620_hpMain_16x9_1600.jpg" alt="singer" style="width: 100%">
+                </a>
+</td>
+            <td align="center"> miely </td>
+        </tr>
+
+        <tr style="background-color:goldenrod">
+            <td align="center"><input id="s5" type="number"/> </td>
+            <td align="center"> מישיגן</td>
+            <td>
+                <a href="https://he.wikipedia.org/wiki/%D7%9C%D7%99%D7%96%D7%95">
+                    <img src="https://static01.nyt.com/images/2022/06/16/multimedia/14xp-lizzo2/14xp-lizzo2-videoSixteenByNineJumbo1600.jpg" alt="singer" style=" width:100%">
+                </a>
+                    </td>
+            <td align="center"> lizzo </td>
+        </tr>
+
+        <tr style="background-color:crimson">
+            <td align="center"><input id="s6" type="number"/> </td>
+            <td align="center"> ניגריה</td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Ayra_Starr">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_6Q-VZIi7Y4dapNAcs-HaecHD6pFHX-YWzA&usqp=CAU" alt="singer" style="width: 100%">
+                </a>
+            </td>
+            <td align="center"> ayra </td>
+        </tr>
+
+        <tfoot>
+            <tr>
+                <td colspan="4" > <input type="button" onclick="check()" value="הצג התפלגות" style="width:100%"></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <div id="x" style="width:100% ;height:30px; background-color:chartreuse">
+        <div id= 1 style="width: 0%; float: left; background-color: blueviolet" > </div>
+        <div id= 2 style="width: 0%; float :left; background-color: aqua "> </div>
+        <div id= 3 style="width: 0%; float: left; background-color: coral "> </div>
+        <div id= 4 style="width: 0%; float: left; background-color: greenyellow "> </div>
+        <div id= 5 style="width: 0%; float: left; background-color: goldenrod "> </div>
+        <div id= 6 style="width: 0%; float: left; background-color: crimson "> </div>
+    </div>
+
+    
+</body>
+</html>
